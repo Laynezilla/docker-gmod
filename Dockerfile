@@ -18,6 +18,8 @@ WORKDIR /home/steam
 RUN wget -O ./steamcmd_linux.tar.gz "http://media.steampowered.com/client/steamcmd_linux.tar.gz" &&\
 	tar -xvzf ./steamcmd_linux.tar.gz &&\
 	./steamcmd.sh +login anonymous +quit &&\
-	./steamcmd.sh +login anonymous +force_install_dir "./gmod" +app_update 4020 validate +quit
+	./steamcmd.sh +login anonymous +force_install_dir "./gmod" +app_update 4020 validate +quit && \
+	./steamcmd.sh +login anonymous +force_install_dir "./content/css" +app_update 232330 validate +quit
 
-CMD ./gmod/srcds_run -game garrysmod +maxplayers 12 +map gm_flatgrass
+CMD ./gmod/srcds_run -game garrysmod +maxplayers 12 +map gm_flatgrass +gamemode sanbox
+#CMD ./gmod/srcds_run -console -game garrysmod +maxplayers 24 +host_workshop_collection 177117131 -authkey $AUTH_KEY +map TTT_Nuclear_Power_b2 +gamemode prop_hunt
