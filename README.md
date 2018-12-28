@@ -1,5 +1,5 @@
-# docker-gmod-prophunt
-Garry's Mod server for PropHunt gamemode. Can also be used for other gamemodes, just change the map, workshop collection, and gamemode environment variables
+# docker-gmod
+Garry's Mod server base. Can be used for other gamemodes, just change the map, workshop collection, and gamemode environment variables
 
 ## Example Usages
 Containers may take several minutes to download new content.
