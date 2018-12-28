@@ -7,7 +7,8 @@ Containers may take several minutes to download new content.
 [Find your Steam API key here](https://steamcommunity.com/dev/apikey)
 
 ### [PropHunt](https://steamcommunity.com/sharedfiles/filedetails/?id=177117131)
-```docker run -d \
+```
+docker run -d \
 --name prophunt \
 --network=host \
 -e MAP "ph_starship" \
@@ -19,7 +20,8 @@ laynal/docker-gmod
 ```
 
 ### [TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=298502203)
-```docker run -d \
+```
+docker run -d \
 --name ttt \
 --network=host \
 -e MAP "ttt_lego" \
@@ -31,7 +33,8 @@ laynal/docker-gmod
 ```
 
 ### [Deathrun](https://steamcommunity.com/sharedfiles/filedetails/?id=215866002)
-```docker run -d \
+```
+docker run -d \
 --name deathrun \
 --network=host \
 -e MAP "deathrun_iceworld" \
