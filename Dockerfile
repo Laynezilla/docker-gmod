@@ -19,7 +19,14 @@ RUN wget -O ./steamcmd_linux.tar.gz "http://media.steampowered.com/client/steamc
 	tar -xvzf ./steamcmd_linux.tar.gz &&\
 	./steamcmd.sh +login anonymous +quit &&\
 	./steamcmd.sh +login anonymous +force_install_dir "./gmod" +app_update 4020 validate +quit && \
-	./steamcmd.sh +login anonymous +force_install_dir "./content/css" +app_update 232330 validate +quit
+	./steamcmd.sh +login anonymous +force_install_dir "./content/css" +app_update 232330 validate +quit && \
+	wget -O ./gmod/garrysmod/cfg/mount.cfg "https://raw.githubusercontent.com/Laynezilla/docker-gmod-prophunt/master/mount.cfg"
 
-CMD ./gmod/srcds_run -game garrysmod +maxplayers 12 +map gm_flatgrass +gamemode sanbox
-#CMD ./gmod/srcds_run -console -game garrysmod +maxplayers 24 +host_workshop_collection 177117131 -authkey $AUTH_KEY +map TTT_Nuclear_Power_b2 +gamemode prop_hunt
+ENV MAP="gm_flatgrass"
+ENV MAX_PLAYERS="12"
+ENV GAMEMODE="sandbox"
+ENV WORKSHOP_COLLECTION=""
+ENV AUTH_KEY=""
+
+# https://steamcommunity.com/dev/apikey
+CMD ./gmod/srcds_run -game garrysmod +maxplayers $MAX_PLAYERS +map $MAP +gamemode $GAMEMODE +host_workshop_collection $WORKSHOP_COLLECTION -authkey $AUTH_KEY
