@@ -12,3 +12,5 @@ docker run -d \\\
 -e WORKSHOP_COLLECTION "177117131" \\\
 -e AUTH_KEY "find yours [here](https://steamcommunity.com/dev/apikey)" \\\
 laynal/docker-gmod-prophunt
+
+Container may take several minutes to download new content.
