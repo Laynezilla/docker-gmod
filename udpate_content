@@ -1,4 +1,5 @@
 @NoPromptForPassword 1
+@ShutdownOnFailedCommand 1
 login anonymous
 force_install_dir ./gmod
 app_update 4020 validate
