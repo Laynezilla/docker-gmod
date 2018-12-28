@@ -6,7 +6,7 @@ Garry's Mod server for PropHunt gamemode. Can also be used for other gamemodes, 
 docker run -d \\\
 --name prophunt \\\
 --network=host \\\
--e MAP "TTT_Nuclear_Power_b2" \\\
+-e MAP "ph_starship" \\\
 -e MAX_PLAYERS "24" \\\
 -e GAMEMODE "prop_hunt" \\\
 -e WORKSHOP_COLLECTION "177117131" \\\
