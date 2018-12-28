@@ -1,0 +1,8 @@
+@NoPromptForPassword 1
+login anonymous
+force_install_dir ./gmod
+app_update 4020 validate
+quit
+force_install_dir ./content/css
+app_update 232330  validate
+quit
