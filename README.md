@@ -11,11 +11,11 @@ Containers may take several minutes to download new content.
 docker run -d \
 --name prophunt \
 --network=host \
--e MAP "ph_starship" \
--e MAX_PLAYERS "24" \
--e GAMEMODE "prop_hunt" \
--e WORKSHOP_COLLECTION "177117131" \
--e AUTH_KEY "XXXXXX" \
+-e MAP="ph_starship" \
+-e MAX_PLAYERS="24" \
+-e GAMEMODE="prop_hunt" \
+-e WORKSHOP_COLLECTION="177117131" \
+-e AUTH_KEY="XXXXXX" \
 laynal/docker-gmod
 ```
 #### PropHunt Maps
@@ -33,11 +33,11 @@ laynal/docker-gmod
 docker run -d \
 --name ttt \
 --network=host \
--e MAP "ttt_lego" \
--e MAX_PLAYERS "24" \
--e GAMEMODE "terrortown" \
--e WORKSHOP_COLLECTION "298502203" \
--e AUTH_KEY "XXXXXX" \
+-e MAP="ttt_lego" \
+-e MAX_PLAYERS="24" \
+-e GAMEMODE="terrortown" \
+-e WORKSHOP_COLLECTION="298502203" \
+-e AUTH_KEY="XXXXXX" \
 laynal/docker-gmod
 ```
 #### TTT Maps
@@ -70,11 +70,11 @@ laynal/docker-gmod
 docker run -d \
 --name deathrun \
 --network=host \
--e MAP "deathrun_iceworld" \
--e MAX_PLAYERS "24" \
--e GAMEMODE "deathrun" \
--e WORKSHOP_COLLECTION "215866002" \
--e AUTH_KEY "XXXXXX" \
+-e MAP="deathrun_iceworld" \
+-e MAX_PLAYERS="24" \
+-e GAMEMODE="deathrun" \
+-e WORKSHOP_COLLECTION="215866002" \
+-e AUTH_KEY="XXXXXX" \
 laynal/docker-gmod
 ```
 #### Deathrun Maps
@@ -96,11 +96,11 @@ laynal/docker-gmod
 docker run -d \
 --name hidden \
 --network=host \
--e MAP "hdn_decay" \
--e MAX_PLAYERS "24" \
--e GAMEMODE "thehidden" \
--e WORKSHOP_COLLECTION "1605914841" \
--e AUTH_KEY "XXXXXX" \
+-e MAP="hdn_decay" \
+-e MAX_PLAYERS="24" \
+-e GAMEMODE="thehidden" \
+-e WORKSHOP_COLLECTION="1605914841" \
+-e AUTH_KEY="XXXXXX" \
 laynal/docker-gmod
 ```
 #### The Hidden Maps
@@ -125,11 +125,11 @@ laynal/docker-gmod
 docker run -d \
 --name murder \
 --network=host \
--e MAP "md_clue" \
--e MAX_PLAYERS "24" \
--e GAMEMODE "murder" \
--e WORKSHOP_COLLECTION "1606051310" \
--e AUTH_KEY "XXXXXX" \
+-e MAP="md_clue" \
+-e MAX_PLAYERS="24" \
+-e GAMEMODE="murder" \
+-e WORKSHOP_COLLECTION="1606051310" \
+-e AUTH_KEY="XXXXXX" \
 laynal/docker-gmod
 ```
 #### Murder Maps
@@ -148,11 +148,11 @@ laynal/docker-gmod
 docker run -d \
 --name gungame \
 --network=host \
--e MAP "cs_assault" \
--e MAX_PLAYERS "24" \
--e GAMEMODE "gungame" \
--e WORKSHOP_COLLECTION "1606154573" \
--e AUTH_KEY "XXXXXX" \
+-e MAP="cs_assault" \
+-e MAX_PLAYERS="24" \
+-e GAMEMODE="gungame" \
+-e WORKSHOP_COLLECTION="1606154573" \
+-e AUTH_KEY="XXXXXX" \
 laynal/docker-gmod
 ```
 #### GunGame Maps
