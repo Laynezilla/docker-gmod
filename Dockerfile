@@ -28,6 +28,7 @@ ENV GAMEMODE="sandbox"
 ENV WORKSHOP_COLLECTION=""
 ENV AUTH_KEY=""
 
-# Two commands: update content then run server
-CMD ./steamcmd.sh +login anonymous +force_install_dir ./gmod +app_update 4020 validate +force_install_dir ./content/css +app_update 232330 validate +quit && \
+# Three commands: Create workshop.lua for addons, update content, then run server
+CMD echo "resource.AddWorkshop("$WORKSHOP_COLLECTION")" > ./gmod/garrysmod/lua/autorun/server/workshop.lua && \
+	./steamcmd.sh +login anonymous +force_install_dir ./gmod +app_update 4020 validate +force_install_dir ./content/css +app_update 232330 validate +quit && \
 	./gmod/srcds_run -game garrysmod +maxplayers $MAX_PLAYERS +map $MAP +gamemode $GAMEMODE +host_workshop_collection $WORKSHOP_COLLECTION -authkey $AUTH_KEY
