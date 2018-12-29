@@ -44,3 +44,52 @@ docker run -d \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
 ```
+
+### [The Hidden](https://steamcommunity.com/sharedfiles/filedetails/?id=1605914841)
+```
+docker run -d \
+--name hidden \
+--network=host \
+-e MAP "gm_construct" \
+-e MAX_PLAYERS "24" \
+-e GAMEMODE "thehidden" \
+-e WORKSHOP_COLLECTION "1605914841" \
+-e AUTH_KEY "XXXXXX" \
+laynal/docker-gmod
+```
+
+### [Murder](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
+```
+docker run -d \
+--name murder \
+--network=host \
+-e MAP "md_clue" \
+-e MAX_PLAYERS "24" \
+-e GAMEMODE "murder" \
+-e WORKSHOP_COLLECTION "1606051310" \
+-e AUTH_KEY "XXXXXX" \
+laynal/docker-gmod
+```
+#### Murder Maps
+* cs_office
+* de_chateau
+* cs_italy
+* md_clue
+* mu_nightmare_church
+* de_chateau
+* de_prodigy
+* gm_housewithgardenV2
+* de_forest
+
+### [Murder](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
+```
+docker run -d \
+--name murder \
+--network=host \
+-e MAP "clue" \
+-e MAX_PLAYERS "24" \
+-e GAMEMODE "murder" \
+-e WORKSHOP_COLLECTION "1606051310" \
+-e AUTH_KEY "XXXXXX" \
+laynal/docker-gmod
+```
