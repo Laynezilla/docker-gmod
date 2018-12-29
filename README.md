@@ -72,11 +72,24 @@ docker run -d \
 --network=host \
 -e MAP "deathrun_iceworld" \
 -e MAX_PLAYERS "24" \
--e GAMEMODE "" \
+-e GAMEMODE "deathrun" \
 -e WORKSHOP_COLLECTION "215866002" \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
 ```
+#### Deathrun Maps
+* deathrun_iceworld_v2fix
+* deathrun_simpsons_finalfix
+* deathrun_helix_b8
+* deathrun_tribute_final
+* deathrun_rocketending_v4
+* deathrun_mountains_rc
+* Deathrun_Goldfever_a
+* deathrun_industrial
+* deathrun_family_guy_final2
+* deathrun_tp_percolate_oreo
+* deathrun_cb_egypt_v1
+* deathrun_marvelicious_alpha
 
 ### [The Hidden](https://steamcommunity.com/sharedfiles/filedetails/?id=1605914841)
 ```
@@ -130,15 +143,34 @@ laynal/docker-gmod
 * gm_housewithgardenV2
 * de_forest
 
-### [DeathRun](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
+### [GunGame](https://steamcommunity.com/sharedfiles/filedetails/?id=1606154573)
 ```
 docker run -d \
---name murder \
+--name gungame \
 --network=host \
--e MAP "" \
+-e MAP "cs_assault" \
 -e MAX_PLAYERS "24" \
--e GAMEMODE "" \
--e WORKSHOP_COLLECTION "1606051310" \
+-e GAMEMODE "gungame" \
+-e WORKSHOP_COLLECTION "1606154573" \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
 ```
+####GunGame Maps
+* de_aztec
+* de_cbble
+* de_chateau
+* de_dust
+* de_dust2
+* de_inferno
+* de_nuke
+* de_piranesi
+* cs_assault
+* cs_compound
+* cs_havana
+* cs_italy
+* cs_militia
+* cs_office
+* de_port
+* de_prodigy
+* de_tides
+* de_train
