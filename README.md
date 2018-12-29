@@ -1,5 +1,5 @@
 # docker-gmod
-Garry's Mod server base with CS:S content. Can be used for other gamemodes, just change the map, workshop collection, and gamemode environment variables
+Garry's Mod server base with CS:S content. Can be used for other gamemodes, just change the map, workshop collection, and gamemode environment variables.
 
 ## Example Usages
 Containers may take several minutes to download new content.
