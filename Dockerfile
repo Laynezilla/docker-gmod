@@ -20,7 +20,9 @@ RUN wget -O ./steamcmd_linux.tar.gz "http://media.steampowered.com/client/steamc
 	./steamcmd.sh +login anonymous +quit &&\
 	./steamcmd.sh +login anonymous +force_install_dir "./gmod" +app_update 4020 validate +quit && \
 	./steamcmd.sh +login anonymous +force_install_dir "./content/css" +app_update 232330 validate +quit && \
-	wget -O ./gmod/garrysmod/cfg/mount.cfg "https://raw.githubusercontent.com/Laynezilla/docker-gmod-prophunt/master/mount.cfg"
+	wget -O ./gmod/garrysmod/cfg/mount.cfg "https://raw.githubusercontent.com/Laynezilla/docker-gmod-prophunt/master/mount.cfg" && \
+	wget -O ./bootstart.sh "https://raw.githubusercontent.com/Laynezilla/docker-gmod/master/bootstart.sh" && \
+	chmod +x ./bootstart.sh
 
 ENV MAP="gm_flatgrass"
 ENV MAX_PLAYERS="12"
@@ -28,7 +30,5 @@ ENV GAMEMODE="sandbox"
 ENV WORKSHOP_COLLECTION=""
 ENV AUTH_KEY=""
 
-# Three commands: Create workshop.lua for addons, update content, then run server
-CMD echo "resource.AddWorkshop("$WORKSHOP_COLLECTION")" > ./gmod/garrysmod/lua/autorun/server/workshop.lua && \
-	./steamcmd.sh +login anonymous +force_install_dir ./gmod +app_update 4020 validate +force_install_dir ./content/css +app_update 232330 validate +quit && \
-	./gmod/srcds_run -game garrysmod +maxplayers $MAX_PLAYERS +map $MAP +gamemode $GAMEMODE +host_workshop_collection $WORKSHOP_COLLECTION -authkey $AUTH_KEY
+# Run startup script. Using CMD so it can be skipped on container create
+CMD ["./bootstart.sh"]
