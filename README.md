@@ -70,7 +70,7 @@ laynal/docker-gmod
 docker run -d \
 --name deathrun \
 --network=host \
--e MAP="deathrun_iceworld" \
+-e MAP="deathrun_iceworld_v2fix" \
 -e MAX_PLAYERS="24" \
 -e GAMEMODE="deathrun" \
 -e WORKSHOP_COLLECTION="215866002" \
