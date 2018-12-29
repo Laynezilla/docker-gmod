@@ -18,6 +18,15 @@ docker run -d \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
 ```
+#### PropHunt Maps
+* gm_housewithgardenV2
+* ph_niteoflivingdead
+* TTT_Nuclear_Power_b2
+* ph_restaurant_2017
+* ph_office
+* ph_fancyhouse
+* ph_parkinglot
+* ph_starship
 
 ### [TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=298502203)
 ```
@@ -31,6 +40,30 @@ docker run -d \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
 ```
+#### TTT Maps
+* ttt_lego
+* ttt_mcskyblocks02
+* ttt_bb_teenroom_b2
+* ttt_mcvillage_V6
+* ttt_minecraftcity_v4
+* ttt_mc_mineshaft
+* ttt_mc_tiptsky_b5
+* ttt_minecraft_b5
+* ttt_krusty_krab
+* ttt_Clue_se
+* ttt_theship_v1
+* ttt_mw2_terminal
+* ttt_rooftops_2016_v1
+* ttt_southpark
+* ttt_community_bowling_v5a
+* ttt_mw2_rust
+* ttt_minecraftcity_v4_dark
+* ttt_skyscraper
+* ttt_camel_v1
+* ttt_airbus_b3
+* ttt_cluedo_b5_improved1
+* ttt_mc_skyislands
+* ttt_waterworld
 
 ### [Deathrun](https://steamcommunity.com/sharedfiles/filedetails/?id=215866002)
 ```
@@ -50,13 +83,29 @@ laynal/docker-gmod
 docker run -d \
 --name hidden \
 --network=host \
--e MAP "gm_construct" \
+-e MAP "hdn_decay" \
 -e MAX_PLAYERS "24" \
 -e GAMEMODE "thehidden" \
 -e WORKSHOP_COLLECTION "1605914841" \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
 ```
+#### The Hidden Maps
+* hdn_decay
+* hdn_derelict
+* hdn_discovery
+* hdn_docks
+* hdn_executive
+* hdn_highrise
+* hdn_origin
+* hdn_sewers
+* hdn_stalkyard
+* hdn_traindepot
+* htr_tutorial
+* mtr_tutorial
+* ovr_derelict
+* ovr_docks
+* ovr_executive
 
 ### [Murder](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
 ```
@@ -81,14 +130,14 @@ laynal/docker-gmod
 * gm_housewithgardenV2
 * de_forest
 
-### [Murder](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
+### [DeathRun](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
 ```
 docker run -d \
 --name murder \
 --network=host \
--e MAP "clue" \
+-e MAP "" \
 -e MAX_PLAYERS "24" \
--e GAMEMODE "murder" \
+-e GAMEMODE "" \
 -e WORKSHOP_COLLECTION "1606051310" \
 -e AUTH_KEY "XXXXXX" \
 laynal/docker-gmod
