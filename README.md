@@ -6,6 +6,10 @@ Containers may take several minutes to download new content.
 
 [Find your Steam API key here](https://steamcommunity.com/dev/apikey)
 
+### To be added
+* [Guess Who](https://steamcommunity.com/sharedfiles/filedetails/?id=480998235)
+* [Cops and Runners](https://steamcommunity.com/sharedfiles/filedetails/?id=277013349&searchtext=)
+
 ### [PropHunt](https://steamcommunity.com/sharedfiles/filedetails/?id=177117131)
 ```
 docker run -d \
