@@ -16,4 +16,4 @@ fi
 ./steamcmd.sh +login anonymous +force_install_dir ./gmod +app_update 4020 validate +force_install_dir ./content/css +app_update 232330 validate +quit;
 
 # Start server
-./gmod/srcds_run -game garrysmod +maxplayers $MAX_PLAYERS +map $MAP +gamemode $GAMEMODE +host_workshop_collection $WORKSHOP_COLLECTION -authkey $AUTH_KEY
+./gmod/srcds_run -game garrysmod +maxplayers $MAX_PLAYERS +map $MAP +gamemode $GAMEMODE +host_workshop_collection $WORKSHOP_COLLECTION -authkey $AUTH_KEY;
