@@ -178,3 +178,11 @@ laynal/docker-gmod
 * de_prodigy
 * de_tides
 * de_train
+
+## Issues
+* Map change kicks everyone off server.
+* Starting container in detached mode makes console unavailable.
+* Clients are slow to download workshop files.
+* GunGame player spawns are wrong.
+* Placeholder textures appear sometimes, especially in TheHidden.
+* Map rotations are wrong.
