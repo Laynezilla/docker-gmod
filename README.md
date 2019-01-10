@@ -186,4 +186,4 @@ laynal/docker-gmod
 * GunGame player spawns are wrong.
 * Placeholder textures appear sometimes, especially in TheHidden.
 * Map rotations are wrong.
-* Try "lua_run GM.Hiden.CustomMode = true" for TheHidden custom mode.
+* Try `lua_run GM.Hiden.CustomMode = true` for TheHidden custom mode.
