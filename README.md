@@ -6,21 +6,23 @@ Containers may take several minutes to download new content.
 
 [Find your Steam API key here](https://steamcommunity.com/dev/apikey)
 
+Use `docker attach <container name>` to access console. It looks blank but should actually be working. Press `ctrl+p+ctrl+q` to detach cleanly.
+
 ### To be added
 * [Guess Who](https://steamcommunity.com/sharedfiles/filedetails/?id=480998235)
 * [Cops and Runners](https://steamcommunity.com/sharedfiles/filedetails/?id=277013349&searchtext=)
 
 ### [PropHunt](https://steamcommunity.com/sharedfiles/filedetails/?id=177117131)
 ```
-docker run -d \
---name prophunt \
---network=host \
--e MAP="ph_starship" \
--e MAX_PLAYERS="24" \
--e GAMEMODE="prop_hunt" \
--e WORKSHOP_COLLECTION="177117131" \
--e AUTH_KEY="XXXXXX" \
-laynal/docker-gmod
+docker run -dit \
+	--name prophunt \
+	--network=host \
+	-e MAP="ph_starship" \
+	-e MAX_PLAYERS="24" \
+	-e GAMEMODE="prop_hunt" \
+	-e WORKSHOP_COLLECTION="177117131" \
+	-e AUTH_KEY="XXXXXX" \
+	laynal/docker-gmod
 ```
 #### PropHunt Maps
 * gm_housewithgardenV2
@@ -34,15 +36,15 @@ laynal/docker-gmod
 
 ### [TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=298502203)
 ```
-docker run -d \
---name ttt \
---network=host \
--e MAP="ttt_lego" \
--e MAX_PLAYERS="24" \
--e GAMEMODE="terrortown" \
--e WORKSHOP_COLLECTION="298502203" \
--e AUTH_KEY="XXXXXX" \
-laynal/docker-gmod
+docker run -dit \
+	--name ttt \
+	--network=host \
+	-e MAP="ttt_lego" \
+	-e MAX_PLAYERS="24" \
+	-e GAMEMODE="terrortown" \
+	-e WORKSHOP_COLLECTION="298502203" \
+	-e AUTH_KEY="XXXXXX" \
+	laynal/docker-gmod
 ```
 #### TTT Maps
 * ttt_lego
@@ -71,15 +73,15 @@ laynal/docker-gmod
 
 ### [Deathrun](https://steamcommunity.com/sharedfiles/filedetails/?id=215866002)
 ```
-docker run -d \
---name deathrun \
---network=host \
--e MAP="deathrun_iceworld_v2fix" \
--e MAX_PLAYERS="24" \
--e GAMEMODE="deathrun" \
--e WORKSHOP_COLLECTION="215866002" \
--e AUTH_KEY="XXXXXX" \
-laynal/docker-gmod
+docker run -dit \
+	--name deathrun \
+	--network=host \
+	-e MAP="deathrun_iceworld_v2fix" \
+	-e MAX_PLAYERS="24" \
+	-e GAMEMODE="deathrun" \
+	-e WORKSHOP_COLLECTION="215866002" \
+	-e AUTH_KEY="XXXXXX" \
+	laynal/docker-gmod
 ```
 #### Deathrun Maps
 * deathrun_iceworld_v2fix
@@ -97,15 +99,15 @@ laynal/docker-gmod
 
 ### [The Hidden](https://steamcommunity.com/sharedfiles/filedetails/?id=1605914841)
 ```
-docker run -d \
---name hidden \
---network=host \
--e MAP="hdn_decay" \
--e MAX_PLAYERS="24" \
--e GAMEMODE="thehidden" \
--e WORKSHOP_COLLECTION="1605914841" \
--e AUTH_KEY="XXXXXX" \
-laynal/docker-gmod
+docker run -dit \
+	--name hidden \
+	--network=host \
+	-e MAP="hdn_decay" \
+	-e MAX_PLAYERS="24" \
+	-e GAMEMODE="thehidden" \
+	-e WORKSHOP_COLLECTION="1605914841" \
+	-e AUTH_KEY="XXXXXX" \
+	laynal/docker-gmod
 ```
 #### The Hidden Maps
 * hdn_decay
@@ -126,15 +128,15 @@ laynal/docker-gmod
 
 ### [Murder](https://steamcommunity.com/sharedfiles/filedetails/?id=1606051310)
 ```
-docker run -d \
---name murder \
---network=host \
--e MAP="md_clue" \
--e MAX_PLAYERS="24" \
--e GAMEMODE="murder" \
--e WORKSHOP_COLLECTION="1606051310" \
--e AUTH_KEY="XXXXXX" \
-laynal/docker-gmod
+docker run -dit \
+	--name murder \
+	--network=host \
+	-e MAP="md_clue" \
+	-e MAX_PLAYERS="24" \
+	-e GAMEMODE="murder" \
+	-e WORKSHOP_COLLECTION="1606051310" \
+	-e AUTH_KEY="XXXXXX" \
+	laynal/docker-gmod
 ```
 #### Murder Maps
 * cs_office
@@ -149,15 +151,15 @@ laynal/docker-gmod
 
 ### [GunGame](https://steamcommunity.com/sharedfiles/filedetails/?id=1606154573)
 ```
-docker run -d \
---name gungame \
---network=host \
--e MAP="cs_assault" \
--e MAX_PLAYERS="24" \
--e GAMEMODE="gungame" \
--e WORKSHOP_COLLECTION="1606154573" \
--e AUTH_KEY="XXXXXX" \
-laynal/docker-gmod
+docker run -dit \
+	--name gungame \
+	--network=host \
+	-e MAP="cs_assault" \
+	-e MAX_PLAYERS="24" \
+	-e GAMEMODE="gungame" \
+	-e WORKSHOP_COLLECTION="1606154573" \
+	-e AUTH_KEY="XXXXXX" \
+	laynal/docker-gmod
 ```
 #### GunGame Maps
 * de_aztec
@@ -181,7 +183,6 @@ laynal/docker-gmod
 
 ## Issues
 * Map change kicks everyone off server.
-* Starting container in detached mode makes console unavailable.
 * Clients are slow to download workshop files.
 * GunGame player spawns are wrong.
 * Placeholder textures appear sometimes, especially in TheHidden.
