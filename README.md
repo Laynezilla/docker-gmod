@@ -187,4 +187,7 @@ docker run -dit \
 * GunGame player spawns are wrong.
 * Placeholder textures appear sometimes, especially in TheHidden.
 * Map rotations are wrong.
-* Try `lua_run GM.Hiden.CustomMode = true` or `lua_run "GM.Hiden.CustomMode = true"` for TheHidden custom mode.
+* Don't know how to enable TheHidden custom mode.
+> Here is the line that needs to be changed
+> https://github.com/Fortune117/thehidden/blob/master/gamemode/config.lua#L96  
+> `lua_run GM.Hidden.CustomMode = true` and `lua_run "GM.Hidden.CustomMode = true"` did not work.
